@@ -1,5 +1,5 @@
+properties properties: [pipelineTriggers([]), [$class: 'GithubProjectProperty', displayName: 'Jenkins']]
 node {
-    properties properties: [pipelineTriggers([]), [$class: 'GithubProjectProperty', displayName: 'Jenkins']]
 
     env = [
         FOO : 42,
