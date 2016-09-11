@@ -17,7 +17,7 @@ node {
         email : "mneale@cloudbees.com"    
     ]
     
-   stage ('stage 1) {
+   stage ('stage 1') {
       echo "hello from stage 1"
    }
 }
