@@ -1,4 +1,9 @@
 node {
+   properties([
+      pipelineTriggers([
+        [$class: "GitHubPushTrigger"]
+      ])
+   ])
  
     env = [
         FOO : 42,
