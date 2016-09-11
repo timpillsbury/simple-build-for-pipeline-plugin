@@ -4,7 +4,7 @@ node {
         FOO : 42,
         BAR : "YASS"
     ]
-    
+  
  
 
     before_script = "echo before"
@@ -13,6 +13,5 @@ node {
     notifications = [
         email : "mneale@cloudbees.com"    
     ]
-    
     
 }
