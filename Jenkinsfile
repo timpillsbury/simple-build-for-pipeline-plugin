@@ -1,4 +1,10 @@
-properties properties: [pipelineTriggers([]), [$class: 'GithubProjectProperty', displayName: 'Jenkins']]
+// Configure project to build on new push.
+properties([
+    pipelineTriggers([
+      [$class: "GitHubPushTrigger"]
+    ])
+])
+
 node {
 
     env = [
